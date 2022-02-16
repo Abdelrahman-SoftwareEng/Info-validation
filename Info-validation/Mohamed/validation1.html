@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Validation Form</title>
+    <style>
+        .errorMessage {
+          color: red;
+        }
+      </style>
+    <script src="./validation1.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Validation Form</legend>
+    <form id="Name">
+        <p id="fname">
+        <label for="Fname">First Name:</label>
+        <input type="text" id="Fname" name="Fname">
+    </p>
+        <p id="lname">
+        <label for="Lname">Last Name:</label>
+        <input type="text" id="Lname" name="Lname">
+
+    </p>
+      </form>
+      
+    <form id="genderF">
+
+        <p id="gender">
+        <label for="GenderL">Gender</label><br>
+        <select name="Gender" id="Gender">
+           
+            <option value="1">...</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        
+          </select>
+        </p>
+    </form>
+
+    <form id="stateF">
+        <p id="state">
+        <label for="StateL">State</label><br>
+        <select name="State" id="State">
+           
+            <option value="1">...</option>
+            <option value="cali">California</option>
+            <option value="NY">NewYork</option>
+            <option value="Texas">Texas</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Washington">Washington</option>
+            <option value="Colo">Colorado</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Arizona">Arizona</option>
+            
+        
+          </select>
+          </p>
+    </form>
+</fieldset>
+<br>
+<input onCLick="validate1()" type="button" id="continue" name="continue" value="Continue"/>
+</body>
+</html>
